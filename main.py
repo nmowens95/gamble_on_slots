@@ -131,6 +131,7 @@ def spin(balance):
     winnings, winning_lines = check_winnings(slots, lines, bet, symbol_value)
     print(f"You won ${winnings}")
     print(f"You won on lines:", *winning_lines)
+    # * is a splat variable which will allow us to say which lines we won on
     return winnings - total_bet
 
 
